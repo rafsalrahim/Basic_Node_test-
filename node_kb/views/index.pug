@@ -1,6 +1,6 @@
-doctype html
-html
-    head 
-        title Basic Test Node kb 
-    body
+extends layout
+block content
         h1 #{title}
+        ul
+            each article, i in articles
+                li= article.title
